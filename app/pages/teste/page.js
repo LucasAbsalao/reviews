@@ -1,11 +1,12 @@
 'use client';
 
-import ShowMovies from '../../components/showMovies/showMovies'
+import FilterReviews from '../../components/filterReviews/filterReviews';
 
 export default function Home() {
 
     return (
         <div id='home'>
+            <FilterReviews/>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 {
-  "/pages/initial_page/page": "app/pages/initial_page/page.js",
+  "/pages/movies/page": "app/pages/movies/page.js",
+  "/pages/create_review/[movieId]/page": "app/pages/create_review/[movieId]/page.js",
   "/pages/choseMovie/page": "app/pages/choseMovie/page.js",
   "/pages/review_detail/[reviewId]/page": "app/pages/review_detail/[reviewId]/page.js",
-  "/pages/create_review/[movieId]/page": "app/pages/create_review/[movieId]/page.js",
-  "/pages/movies/page": "app/pages/movies/page.js"
+  "/pages/teste/page": "app/pages/teste/page.js"
 }

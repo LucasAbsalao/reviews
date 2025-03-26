@@ -7,7 +7,7 @@ import ImageCard from './imageCard/imageCard'
 
 import { useEffect, useState } from "react";
 
-export default function FilterReviews() {
+export default function FilterReviews({searchMovie}) {
     const [removedMovie, setRemovedMovie] = useState(null)
     const [accessedMovie, setAccessedMovie] = useState(null)
     const [movies, setMovies] = useState(null)
