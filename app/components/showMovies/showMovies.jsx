@@ -1,16 +1,23 @@
 'use client';
 
 import './showMovies.css'
+import { useRouter } from 'next/navigation';
 import ImageCard from './imageCard/imageCard'
+
 
 import { useEffect, useState } from "react";
 
-export default function ShowMovies({searchMovie}) {
+export default function FilterReviews() {
     const [removedMovie, setRemovedMovie] = useState(null)
+    const [accessedMovie, setAccessedMovie] = useState(null)
+    const [movies, setMovies] = useState(null)
     const [movieTitleCover, setMovieTitleCover] = useState([])
+
+    const router = useRouter();
 
     useEffect(() => {
         async function getMovies (){
+
             const response = await fetch("http://localhost:5001/movies/", {
                 method: "GET",
                 headers: {
@@ -26,6 +33,7 @@ export default function ShowMovies({searchMovie}) {
 
             const orderedMovies = movies.sort((a, b) => a.name.localeCompare(b.name));
             const listImageTitle = orderedMovies.map(movie => ({
+                id: movie._id,
                 name: movie.name, 
                 coverURL: movie.cover.imageURL
             }));
@@ -43,6 +51,10 @@ export default function ShowMovies({searchMovie}) {
         //     setRemovedMovie(null)
         // },[removedMovie])
 
+        const handleNavigate = (id) => {
+            console.log(id)
+            router.push(`/pages/movie_reviews?id=${id}`);
+        }
     return (
         <div id = 'container'>
             <div id='grid-container'>
