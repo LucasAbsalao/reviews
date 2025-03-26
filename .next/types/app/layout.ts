@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\lucas\Documents\CIn\Sexto período\engSoftwareSistemas\reviews\app\layout.js
+=======
+// File: /Users/luanthiers/Desktop/Projetos/Projeto_ESS/reviews_/app/layout.js
+>>>>>>> upstream/dev
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

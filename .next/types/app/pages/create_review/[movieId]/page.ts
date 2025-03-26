@@ -1,8 +1,16 @@
+<<<<<<<< HEAD:.next/types/app/pages/create_review/[movieId]/page.ts
 // File: C:\Users\lucas\Documents\CIn\Sexto período\engSoftwareSistemas\reviews\app\pages\create_review\[movieId]\page.tsx
 import * as entry from '../../../../../../app/pages/create_review/[movieId]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
 type TEntry = typeof import('../../../../../../app/pages/create_review/[movieId]/page.js')
+========
+// File: /Users/luanthiers/Desktop/Projetos/Projeto_ESS/reviews_/app/pages/choseMovie/page.js
+import * as entry from '../../../../../app/pages/choseMovie/page.js'
+import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
+
+type TEntry = typeof import('../../../../../app/pages/choseMovie/page.js')
+>>>>>>>> upstream/dev:.next/types/app/pages/choseMovie/page.ts
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }
